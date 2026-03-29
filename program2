@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	int Math,English,Physics,Chemistry,Biology,Poetry,total;
+	float percentage;
+	printf("We will calculate the percentage of your your marks.\nAssuming each subject is out of 100. ");
+	printf("\nEnter your marks in \n\nMath:");
+	scanf("%d",&Math);
+	printf("\nEnglish:");
+	scanf("%d",&English);
+	printf("\nChemistry:");
+	scanf("%d",&Chemistry);
+	printf("\nPhysics:");
+	scanf("%d",&Physics);
+	printf("\nBiology:");
+	scanf("%d",&Biology);
+	printf("\nPoetry:");
+	scanf("%d",&Poetry);
+	total=Math+English+Chemistry+Physics+Biology+Poetry;
+	percentage=total/6;
+	printf("So the total marks of the six subjects is %d and your percentage will be %0.2f",total,percentage);//here 0.2 in %0.2f specifies the decimal enteries
+	getch();
+}
