@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/*This program is used to understand the working of modulo function in C and also to make a simple currency distributing program */
+
+int main() 
+{
+  printf("This program will take an ammount from you in dollars, and give you the minimum number of bills/coins required to reach that ammount in both\n dollars and cents"); 
+	printf("\nEnter your Ammount:");
+	float ammount_decimal,decimal;//11987.34
+	scanf("%f",&ammount_decimal);
+	int hunD,fifD,twenD,tenD,fivD,twoD,oneD,ammount,cents;
+	ammount=ammount_decimal;
+	decimal=(ammount_decimal-ammount)*100;
+	cents=decimal;
+	int fifC,twenC,tenC,fivC,twoC,oneC;
+	hunD=ammount/100;
+	ammount=ammount%100;
+	fifD=ammount/50;
+	ammount=ammount%50;
+	twenD=ammount/20;
+	ammount=ammount%20;
+	tenD=ammount/10;
+	ammount=ammount%10;
+	fivD=ammount/5;
+	ammount=ammount%5;
+	twoD=ammount/2;
+	ammount=ammount%2;
+	oneD=ammount;
+	
+	fifC=cents/50;
+	cents=cents%50;
+	twenC=cents/20;
+	cents=cents%20;
+	tenC=cents/10;
+	cents=cents%10;
+	fivC=cents/5;
+	cents=cents%5;
+	twoC=cents/2;
+	cents=cents%2;
+	oneC=cents;
+	
+	printf("\nFor the sorting in bills:");
+	printf("\n100$ bills are %d",hunD);
+	printf("\n50$ bills are %d",fifD);
+	printf("\n20$ bills are %d",twenD);
+	printf("\n10$ bills are %d",tenD);
+	printf("\n5$ bills are %d",fivD);
+	printf("\n2$ bills are %d",twoD);
+	printf("\n1$ bills are %d",oneD);
+	printf("\nThe sorting in cents is:\n");
+	printf("\n50 cents are %d",fifC);
+	printf("\n20 cents are %d",twenC);
+	printf("\n10 cents are %d",tenC);
+	printf("\n5 cents are %d",fivC);
+	printf("\n2 cents are %d",twoC);
+	printf("\n1 cents are %d",oneC);
+	return 0;
+}
