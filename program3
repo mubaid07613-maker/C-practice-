@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+/*in this program we used the math.h library to get a better undertanding of sqrt() function*/
+int main()
+{
+	
+	float x,y,r,phi;
+	printf("In this program we will convert cartesian points(x,y) into polar co-ordinaes:");
+	printf("\nEnter the cartesian coordinates:");
+	printf("\nx=");
+	scanf("%f",&x);
+	printf("y=");
+	scanf("%f",&y);
+	r=sqrt((x*x)+(y*y));
+	printf("\nThe polar co-ordinate r is %0.2f",r);
+	phi=atan(y/x);
+	printf("\nThe polar co-ordinate \u03A6 in radians is %0.2f and in degrees is %0.2f",phi,phi*(180/M_PI));
+	return 0;
+}
