@@ -18,8 +18,13 @@ int main()
 	scanf("%d",&Biology);
 	printf("\nPoetry:");
 	scanf("%d",&Poetry);
-	total=Math+English+Chemistry+Physics+Biology+Poetry;
-	percentage=total/6;
-	printf("So the total marks of the six subjects is %d and your percentage will be %0.2f",total,percentage);//here 0.2 in %0.2f specifies the decimal enteries
-	getch();
+	if(Math&&<=100English&&Chemistry<=100Physics&&Bilogy<=100&&Poetry<=100)
+	{
+		total=Math+English+Chemistry+Physics+Biology+Poetry;
+		percentage=total/6;
+		printf("So the total marks of the six subjects is %d and your percentage will be %0.2f",total,percentage);//here 0.2 in %0.2f specifies the decimal enteries
+		getch();
+	}
+	else
+		printf("\nYour input was invalid");
 }
