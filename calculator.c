@@ -6,7 +6,7 @@ int main()
 	char c_char;
     float num1, num2, result;
     
-    // Array of strings - This is the correct way
+    // Array of strings
     const char *operation[5] = {
         "Addition",
         "Subtraction",
@@ -29,7 +29,7 @@ int main()
     	scanf("%d", &choice);
 	    if(choice >= 1 && choice <= 5)
 	    {
-	        printf("\nYou have chosen: %s\n", operation[choice-1]);   // Fixed here
+	        printf("\nYou have chosen: %s\n", operation[choice-1]);  
 	        
 	        // Now take two numbers
 	        printf("Enter first number : ");
